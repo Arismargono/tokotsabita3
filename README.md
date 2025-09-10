@@ -28,21 +28,24 @@ A simple PHP-based cashier application for Toko Tsabita.
 4. Vercel will automatically detect it's a PHP project
 5. Click "Deploy"
 
+## Important Note About PHP Deployment
+
+Vercel now uses a community PHP runtime (`vercel-php@0.6.0`) instead of the deprecated `@vercel/php` package. The [vercel.json](file://c:\Users\SMA%20N%206%20BENDAHARA\KASIR%20TSABITA\vercel.json) configuration has been updated to use this runtime.
+
 ## Troubleshooting Deployment Issues
 
 If you encounter issues with PHP runtime detection:
 
 1. Make sure you have a `composer.json` file in your project root
-2. Try specifying the PHP runtime explicitly in `vercel.json`:
+2. The current configuration uses the community PHP runtime:
    ```json
    {
      "version": 2,
-     "builds": [
-       {
-         "src": "**/*.php",
-         "use": "@vercel/php"
+     "functions": {
+       "api/**/*.php": {
+         "runtime": "vercel-php@0.6.0"
        }
-     ]
+     }
    }
    ```
 

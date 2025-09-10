@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "**/*.php",
-      "use": "@vercel/php"
+  "functions": {
+    "api/health.php": {
+      "runtime": "vercel-php@0.6.0"
+    },
+    "api/test.php": {
+      "runtime": "vercel-php@0.6.0"
+    },
+    "api/version.php": {
+      "runtime": "vercel-php@0.6.0"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/health",
