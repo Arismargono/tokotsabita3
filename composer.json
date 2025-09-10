@@ -1,0 +1,14 @@
+{
+  "name": "tsabita/cashier-app",
+  "description": "Toko Tsabita Cashier Application",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tsabita\\": "src/"
+    }
+  }
+}

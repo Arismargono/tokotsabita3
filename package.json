@@ -1,0 +1,18 @@
+{
+  "name": "tsabita-cashier",
+  "version": "1.0.0",
+  "description": "Toko Tsabita Cashier Application",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build required for PHP application\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "php",
+    "cashier",
+    "pos",
+    "retail"
+  ],
+  "author": "Toko Tsabita",
+  "license": "MIT"
+}
